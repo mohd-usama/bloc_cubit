@@ -18,22 +18,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-          BlocProvider<ListCubit>(
-            create: (context) => ListCubit(),
-          ),
-          BlocProvider<DropdownCubit>(
-            create: (context) => DropdownCubit(),
-          ),
-          BlocProvider<FormBloc>(
-            create: (_) => FormBloc(),
-          ),
-          BlocProvider<BottomNavBloc>(
-            create: (_) => BottomNavBloc(),
-          ),
-          BlocProvider<SecondBloc>(
-            create: (_) => SecondBloc(),
-          ),
-          BlocProvider(create: (_) => DasbaordBloc()),
+          BlocProvider<ListCubit>(create: (context) => ListCubit()),
+          BlocProvider<DropdownCubit>(create: (context) => DropdownCubit()),
+          BlocProvider<FormBloc>(create: (_) => FormBloc()),
+          BlocProvider<BottomNavBloc>(create: (_) => BottomNavBloc()),
+          BlocProvider<SecondBloc>(create: (_) => SecondBloc()),
+          BlocProvider(create: (_) => DasbaordBloc())
         ],
         child: MaterialApp(
           title: 'Cubit and Bloc Example',
