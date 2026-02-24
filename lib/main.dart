@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
           BlocProvider(create: (_) => DasbaordBloc()),
         ],
         child: MaterialApp(
-          title: 'Flutter Demo',
+          title: 'Cubit and Bloc Example',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
